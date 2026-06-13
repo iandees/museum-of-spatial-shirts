@@ -6,25 +6,43 @@ const CATEGORY_ICONS = {
   event:   '📅',
   concept: '🌐',
   company: '🏢',
-  sticker: '✨',
 };
 
 const CATEGORY_LABELS = {
   event:   'Event',
   concept: 'Concept',
   company: 'Company',
-  sticker: 'Sticker',
 };
 
-const CATEGORY_PLACEHOLDER = {
-  event:   '🗺️',
-  concept: '🌏',
-  company: '🏢',
+const TYPE_ICONS = {
+  shirt:   '👕',
   sticker: '✨',
+  hoodie:  '🧥',
+  hat:     '🧢',
+  patch:   '🪡',
+  other:   '📦',
+};
+
+const TYPE_LABELS = {
+  shirt:   'Shirt',
+  sticker: 'Sticker',
+  hoodie:  'Hoodie',
+  hat:     'Hat',
+  patch:   'Patch',
+  other:   'Other',
+};
+
+const TYPE_PLACEHOLDER = {
+  shirt:   '👕',
+  sticker: '✨',
+  hoodie:  '🧥',
+  hat:     '🧢',
+  patch:   '🪡',
+  other:   '📦',
 };
 
 let allItems = [];
-let activeCategory = 'all';
+let activeCategory = 'all';  // 'all' | 'shirt' | 'sticker' | ... | 'wanted'
 let activeTags = new Set();
 let searchQuery = '';
 
@@ -52,14 +70,20 @@ async function init() {
 // ---- Stats ----
 function renderStats() {
   const totalPhotos = allItems.reduce((n, i) => n + (i.photos?.length || 0), 0);
-  const eventCount = allItems.filter(i => i.category === 'event').length;
   const storyCount = allItems.reduce((n, i) => n + (i.stories?.length || 0), 0);
+  const shirtCount = allItems.filter(i => i.type === 'shirt').length;
+  const stickerCount = allItems.filter(i => i.type === 'sticker').length;
 
   document.getElementById('hero-stats').innerHTML = `
     <div class="stat">
-      <span class="stat-number">${allItems.length}</span>
-      <span class="stat-label">Items</span>
+      <span class="stat-number">${shirtCount}</span>
+      <span class="stat-label">Shirts</span>
     </div>
+    ${stickerCount > 0 ? `
+    <div class="stat">
+      <span class="stat-number">${stickerCount}</span>
+      <span class="stat-label">Stickers</span>
+    </div>` : ''}
     <div class="stat">
       <span class="stat-number">${totalPhotos}</span>
       <span class="stat-label">Photos</span>
@@ -99,10 +123,12 @@ function renderTagFilters() {
 // ---- Filtering ----
 function getFilteredItems() {
   return allItems.filter(item => {
-    // Category filter
     if (activeCategory === 'wanted') {
       if ((item.photos?.length || 0) > 0) return false;
-    } else if (activeCategory !== 'all' && item.category !== activeCategory) return false;
+    } else if (activeCategory !== 'all') {
+      // Filter by type (shirt, sticker, etc.)
+      if (item.type !== activeCategory) return false;
+    }
 
     // Tag filter
     if (activeTags.size > 0) {
@@ -119,6 +145,7 @@ function getFilteredItems() {
         item.name,
         item.description,
         item.location,
+        item.type,
         ...(item.tags || []),
         ...(item.stories || []).map(s => s.text + ' ' + s.author),
       ].join(' ').toLowerCase();
@@ -149,7 +176,7 @@ function renderGrid() {
     const storyCount = item.stories?.length || 0;
     const wanted = photoCount === 0;
     const catClass = `cat-${item.category}`;
-    const icon = CATEGORY_PLACEHOLDER[item.category] || '👕';
+    const icon = TYPE_PLACEHOLDER[item.type] || TYPE_PLACEHOLDER.other;
 
     const thumbHtml = firstPhoto
       ? `<img src="images/thumb/${firstPhoto.file}" alt="${escHtml(item.name)}" loading="lazy" />`
@@ -172,6 +199,11 @@ function renderGrid() {
       ? `<div class="card-stories-badge">💬 ${storyCount} ${storyCount === 1 ? 'story' : 'stories'}</div>`
       : '';
 
+    // Badge: category + type
+    const typeLabel = TYPE_ICONS[item.type]
+      ? `<span class="card-type-dot">·</span><span class="card-type">${TYPE_ICONS[item.type]} ${TYPE_LABELS[item.type] || item.type}</span>`
+      : '';
+
     return `
       <article class="card ${wanted ? 'card-wanted' : ''}" data-id="${item.id}" role="button" tabindex="0" aria-label="Open ${escHtml(item.name)}">
         <div class="card-thumb">
@@ -179,7 +211,10 @@ function renderGrid() {
           ${photoCountBadge}
         </div>
         <div class="card-body">
-          <span class="card-category ${catClass}">${CATEGORY_ICONS[item.category] || ''} ${CATEGORY_LABELS[item.category] || item.category}</span>
+          <div class="card-badge-row">
+            <span class="card-category ${catClass}">${CATEGORY_ICONS[item.category] || ''} ${CATEGORY_LABELS[item.category] || item.category}</span>
+            ${item.type ? `<span class="card-type-badge">${TYPE_ICONS[item.type] || ''} ${TYPE_LABELS[item.type] || item.type}</span>` : ''}
+          </div>
           <h2 class="card-title">${escHtml(item.name)}</h2>
           ${metaParts.length ? `<div class="card-year">${escHtml(metaParts.join(' · '))}</div>` : ''}
           <p class="card-desc">${escHtml(item.description || '')}</p>
@@ -209,9 +244,6 @@ function openDetail(id) {
 
   const catClass = `cat-${item.category}`;
   const yearStr = item.yearRange || (item.year ? item.year : '');
-  const metaParts = [];
-  if (yearStr) metaParts.push(String(yearStr));
-  if (item.location) metaParts.push(item.location);
 
   const photosHtml = item.photos?.length
     ? `<div>
@@ -232,7 +264,7 @@ function openDetail(id) {
         <a class="story-add-link"
            href="https://github.com/iandees/museum-of-spatial-shirts/issues/new?template=add-shirt.md&title=Photo+for%3A+${encodeURIComponent(item.name)}"
            target="_blank" rel="noopener">
-          📷 Do you have a photo of this shirt? Contribute one!
+          📷 Do you have a photo of this item? Contribute one!
         </a>
       </div>`;
 
@@ -245,7 +277,7 @@ function openDetail(id) {
           ${escHtml(s.text)}
         </div>
       `).join('')}
-      <a class="story-add-link" 
+      <a class="story-add-link"
          href="https://github.com/iandees/museum-of-spatial-shirts/issues/new?template=add-story.md&title=Story+for%3A+${encodeURIComponent(item.name)}"
          target="_blank" rel="noopener">
         + Add a story about this item
@@ -253,14 +285,37 @@ function openDetail(id) {
     </div>
   `;
 
+  // Related items — same event, different type
+  const related = item.event
+    ? allItems.filter(i => i.id !== item.id && i.event === item.event)
+    : [];
+
+  const relatedHtml = related.length
+    ? `<div>
+        <div class="detail-section-title">Also from this event</div>
+        <div class="related-list">
+          ${related.map(r => `
+            <button class="related-item" data-id="${r.id}">
+              ${r.photos?.[0]
+                ? `<img src="images/thumb/${r.photos[0].file}" alt="${escHtml(r.name)}" />`
+                : `<div class="related-placeholder">${TYPE_PLACEHOLDER[r.type] || '📦'}</div>`
+              }
+              <span>${TYPE_ICONS[r.type] || ''} ${TYPE_LABELS[r.type] || r.type}</span>
+            </button>
+          `).join('')}
+        </div>
+      </div>`
+    : '';
+
   const tagsHtml = (item.tags || []).map(t =>
     `<span class="detail-tag">${escHtml(t)}</span>`
   ).join('');
 
   inner.innerHTML = `
     <button class="detail-close" id="detail-close-btn">← Back</button>
-    <div>
+    <div class="card-badge-row">
       <span class="detail-category ${catClass}">${CATEGORY_ICONS[item.category] || ''} ${CATEGORY_LABELS[item.category] || item.category}</span>
+      ${item.type ? `<span class="card-type-badge">${TYPE_ICONS[item.type] || ''} ${TYPE_LABELS[item.type] || item.type}</span>` : ''}
     </div>
     <h2 class="detail-title">${escHtml(item.name)}</h2>
     <div class="detail-meta">
@@ -271,6 +326,7 @@ function openDetail(id) {
     </div>
     <p class="detail-description">${escHtml(item.description || '')}</p>
     ${photosHtml}
+    ${relatedHtml}
     ${storiesHtml}
     ${tagsHtml ? `<div class="detail-tags">${tagsHtml}</div>` : ''}
   `;
@@ -278,7 +334,7 @@ function openDetail(id) {
   panel.classList.add('open');
   panel.setAttribute('aria-hidden', 'false');
 
-  // Bind photo thumbs → lightbox
+  // Photo thumbs → lightbox
   inner.querySelectorAll('.detail-photo-thumb').forEach(thumb => {
     thumb.addEventListener('click', () => {
       const idx = parseInt(thumb.dataset.photoIndex, 10);
@@ -286,7 +342,11 @@ function openDetail(id) {
     });
   });
 
-  // Close button
+  // Related item buttons → open that item
+  inner.querySelectorAll('.related-item').forEach(btn => {
+    btn.addEventListener('click', () => openDetail(btn.dataset.id));
+  });
+
   inner.querySelector('#detail-close-btn').addEventListener('click', closeDetail);
 }
 
@@ -329,7 +389,6 @@ function renderLightboxFrame() {
 
 // ---- Event bindings ----
 function bindEvents() {
-  // Category nav
   document.querySelectorAll('.nav-btn[data-filter]').forEach(btn => {
     btn.addEventListener('click', () => {
       activeCategory = btn.dataset.filter;
@@ -339,16 +398,13 @@ function bindEvents() {
     });
   });
 
-  // Search
   document.getElementById('search-input').addEventListener('input', e => {
     searchQuery = e.target.value.trim();
     renderGrid();
   });
 
-  // Detail overlay close
   document.getElementById('detail-overlay').addEventListener('click', closeDetail);
 
-  // Lightbox
   document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
   document.getElementById('lightbox').addEventListener('click', e => {
     if (e.target === document.getElementById('lightbox')) closeLightbox();
@@ -364,7 +420,6 @@ function bindEvents() {
     renderLightboxFrame();
   });
 
-  // Keyboard
   document.addEventListener('keydown', e => {
     const lightbox = document.getElementById('lightbox');
     const detail = document.getElementById('detail-panel');

@@ -10,9 +10,16 @@
       "location": "Atlanta, GA",
       "url": "https://openstreetmap.us/events/state-of-the-map-us/2010/",
       "description": "The first-ever State of the Map US, held in Atlanta, Georgia. Do you have a shirt from this event?",
-      "tags": ["openstreetmap", "sotmus", "conference", "atlanta", "georgia"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "atlanta",
+        "georgia"
+      ],
       "photos": [],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2012",
@@ -23,9 +30,16 @@
       "location": "Portland, OR",
       "url": "https://openstreetmap.us/events/state-of-the-map-us/2012/",
       "description": "State of the Map US 2012, held in Portland, Oregon. Do you have a shirt from this event?",
-      "tags": ["openstreetmap", "sotmus", "conference", "portland", "oregon"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "portland",
+        "oregon"
+      ],
       "photos": [],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2013",
@@ -36,9 +50,16 @@
       "location": "San Francisco, CA",
       "url": "https://openstreetmap.us/events/state-of-the-map-us/2013/",
       "description": "State of the Map US 2013, held in San Francisco, California. Do you have a shirt from this event?",
-      "tags": ["openstreetmap", "sotmus", "conference", "san-francisco", "california"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "san-francisco",
+        "california"
+      ],
       "photos": [],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2014",
@@ -49,9 +70,15 @@
       "location": "Washington, DC",
       "url": "https://openstreetmap.us/events/state-of-the-map-us/2014/",
       "description": "State of the Map US 2014, held in Washington, DC. Do you have a shirt from this event?",
-      "tags": ["openstreetmap", "sotmus", "conference", "washington-dc"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "washington-dc"
+      ],
       "photos": [],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2015",
@@ -63,7 +90,13 @@
       "venue": "UN Headquarters",
       "url": "https://2015.stateofthemap.us/",
       "description": "Held at the United Nations headquarters in New York City, SotM US 2015 was a landmark event for the OpenStreetMap community. The shirt was designed by Tatiana van Campenhout.",
-      "tags": ["openstreetmap", "sotmus", "conference", "new-york", "un"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "new-york",
+        "un"
+      ],
       "designer": "Tatiana van Campenhout",
       "photos": [
         {
@@ -72,7 +105,8 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2016",
@@ -83,7 +117,12 @@
       "location": "Seattle, WA",
       "url": "https://2016.stateofthemap.us/",
       "description": "State of the Map US 2016, held in Seattle, Washington.",
-      "tags": ["openstreetmap", "sotmus", "conference", "seattle"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "seattle"
+      ],
       "photos": [
         {
           "file": "PXL_20230609_214121934~2.jpg",
@@ -91,7 +130,8 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2017",
@@ -102,7 +142,13 @@
       "location": "Boulder, CO",
       "url": "https://2017.stateofthemap.us/",
       "description": "State of the Map US 2017, held in Boulder, Colorado. Two shirt styles were made for this event.",
-      "tags": ["openstreetmap", "sotmus", "conference", "boulder", "colorado"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "boulder",
+        "colorado"
+      ],
       "photos": [
         {
           "file": "PXL_20231231_165548649.MP.jpg",
@@ -115,7 +161,8 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2018",
@@ -126,7 +173,13 @@
       "location": "Detroit, MI",
       "url": "https://2018.stateofthemap.us/",
       "description": "State of the Map US 2018, held in Detroit, Michigan.",
-      "tags": ["openstreetmap", "sotmus", "conference", "detroit", "michigan"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "detroit",
+        "michigan"
+      ],
       "photos": [
         {
           "file": "PXL_20231231_165639861.jpg",
@@ -139,7 +192,8 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2019",
@@ -150,7 +204,13 @@
       "location": "Minneapolis, MN",
       "url": "https://2019.stateofthemap.us/",
       "description": "State of the Map US 2019, held in Minneapolis, Minnesota.",
-      "tags": ["openstreetmap", "sotmus", "conference", "minneapolis", "minnesota"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "minneapolis",
+        "minnesota"
+      ],
       "photos": [
         {
           "file": "PXL_20231231_165529574.MP.jpg",
@@ -158,7 +218,8 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2022",
@@ -169,7 +230,13 @@
       "location": "Tucson, AZ",
       "url": "https://2022.stateofthemap.us/",
       "description": "State of the Map US 2022, held in Tucson, Arizona. The first SotM US after a three-year gap caused by the COVID-19 pandemic.",
-      "tags": ["openstreetmap", "sotmus", "conference", "tucson", "arizona"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "tucson",
+        "arizona"
+      ],
       "photos": [
         {
           "file": "PXL_20231231_165724768.jpg",
@@ -177,7 +244,8 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2023",
@@ -188,7 +256,13 @@
       "location": "Richmond, VA",
       "url": "https://2023.stateofthemap.us/",
       "description": "State of the Map US 2023, held in Richmond, Virginia.",
-      "tags": ["openstreetmap", "sotmus", "conference", "richmond", "virginia"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "richmond",
+        "virginia"
+      ],
       "photos": [
         {
           "file": "PXL_20231231_165800178.jpg",
@@ -196,7 +270,8 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2024",
@@ -207,9 +282,16 @@
       "location": "Salt Lake City, UT",
       "url": "https://2024.stateofthemap.us/",
       "description": "State of the Map US 2024, held in Salt Lake City, Utah. Do you have a shirt from this event?",
-      "tags": ["openstreetmap", "sotmus", "conference", "salt-lake-city", "utah"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "salt-lake-city",
+        "utah"
+      ],
       "photos": [],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "sotm-us-2025",
@@ -220,9 +302,16 @@
       "location": "Boston, MA",
       "url": "https://2025.stateofthemap.us/",
       "description": "State of the Map US 2025, held in Boston, Massachusetts. Do you have a shirt from this event?",
-      "tags": ["openstreetmap", "sotmus", "conference", "boston", "massachusetts"],
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "boston",
+        "massachusetts"
+      ],
       "photos": [],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "mapbox-2016",
@@ -230,7 +319,10 @@
       "category": "company",
       "year": 2016,
       "description": "A t-shirt from Mapbox, the mapping platform and tools company behind many foundational open-source geo projects. Printed around 2016.",
-      "tags": ["mapbox", "company"],
+      "tags": [
+        "mapbox",
+        "company"
+      ],
       "photos": [
         {
           "file": "PXL_20210223_140324011.jpg",
@@ -243,7 +335,8 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     },
     {
       "id": "mapzen-null-island",
@@ -251,7 +344,12 @@
       "category": "concept",
       "year": null,
       "description": "A t-shirt depicting Null Island — the mythical point at 0°N 0°E where data with missing or zeroed-out coordinates mysteriously \"lands\". Designed and printed by someone at Mapzen, the beloved open-source mapping company.",
-      "tags": ["null-island", "mapzen", "geo-humor", "concept"],
+      "tags": [
+        "null-island",
+        "mapzen",
+        "geo-humor",
+        "concept"
+      ],
       "photos": [
         {
           "file": "PXL_20210223_140354009.jpg",
@@ -269,7 +367,8 @@
           "author": "The Geo Community",
           "text": "If you work in GIS long enough, you'll eventually send thousands of points to Null Island by accident. Mapzen immortalized the gag on a shirt."
         }
-      ]
+      ],
+      "type": "shirt"
     },
     {
       "id": "streetcred-map-nyc",
@@ -277,7 +376,12 @@
       "category": "company",
       "year": null,
       "description": "A \"Map NYC\" t-shirt from StreetCred, a now-defunct geo startup that aimed to build a community-powered places database. A relic of the busy late-2010s wave of open geo companies.",
-      "tags": ["streetcred", "company", "new-york", "places"],
+      "tags": [
+        "streetcred",
+        "company",
+        "new-york",
+        "places"
+      ],
       "photos": [
         {
           "file": "PXL_20231231_165618163.jpg",
@@ -285,7 +389,8 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": []
+      "stories": [],
+      "type": "shirt"
     }
   ]
 }
