@@ -50,6 +50,58 @@ let searchQuery = '';
 let lightboxPhotos = [];
 let lightboxIndex = 0;
 
+// ---- Hash routing ----
+// Format:
+//   #sotm-us-2015                     (item only, backward-compat)
+//   #filter=shirts                     (filter only)
+//   #filter=shirts&item=sotm-us-2015   (filter + item)
+
+function parseHash() {
+  const raw = window.location.hash.slice(1);
+  if (!raw) return { filter: null, item: null };
+  // Backward-compat: plain item ID (no '=' in string)
+  if (!raw.includes('=')) return { filter: null, item: raw };
+  const params = new URLSearchParams(raw);
+  return {
+    filter: params.get('filter') || null,
+    item:   params.get('item')   || null,
+  };
+}
+
+function buildHash({ filter, item }) {
+  const f = filter && filter !== 'all' ? filter : null;
+  if (!f && !item) return '';
+  if (!f && item)  return item;   // plain #item-id for clean item-only links
+  const p = new URLSearchParams();
+  if (f)    p.set('filter', f);
+  if (item) p.set('item', item);
+  return p.toString();
+}
+
+function pushHash(state, { replace = false } = {}) {
+  const hash = buildHash(state);
+  const url = hash ? `#${hash}` : window.location.pathname;
+  if (replace) history.replaceState(null, '', url);
+  else         history.pushState(null, '', url);
+}
+
+function applyHash({ filter, item }, { updateUI = true } = {}) {
+  // Apply filter
+  if (filter && filter !== activeCategory) {
+    activeCategory = filter;
+    if (updateUI) {
+      document.querySelectorAll('.nav-btn[data-filter]').forEach(b => {
+        b.classList.toggle('active', b.dataset.filter === filter);
+      });
+      renderGrid();
+    }
+  }
+  // Open item
+  if (item && allItems.find(i => i.id === item)) {
+    openDetailSilent(item);
+  }
+}
+
 // ---- Bootstrap ----
 async function init() {
   try {
@@ -66,11 +118,8 @@ async function init() {
   renderGrid();
   bindEvents();
 
-  // Open item from URL hash on load
-  if (window.location.hash) {
-    const id = window.location.hash.slice(1);
-    if (allItems.find(i => i.id === id)) openDetail(id);
-  }
+  // Restore state from URL hash on load
+  if (window.location.hash) applyHash(parseHash());
 }
 
 // ---- Stats ----
@@ -242,11 +291,13 @@ function renderGrid() {
 
 // ---- Detail panel ----
 function openDetail(id) {
+  pushHash({ filter: activeCategory, item: id });
+  openDetailSilent(id);
+}
+
+function openDetailSilent(id) {
   const item = allItems.find(i => i.id === id);
   if (!item) return;
-
-  // Update URL hash
-  history.pushState(null, '', `#${id}`);
 
   const panel = document.getElementById('detail-panel');
   const inner = document.getElementById('detail-inner');
@@ -363,7 +414,8 @@ function openDetail(id) {
 
   // Share / copy link button
   inner.querySelector('#detail-share-btn').addEventListener('click', async (e) => {
-    const url = `${location.origin}${location.pathname}#${id}`;
+    const hash = buildHash({ filter: activeCategory, item: id });
+    const url = `${location.origin}${location.pathname}#${hash}`;
     await navigator.clipboard.writeText(url);
     const btn = e.currentTarget;
     btn.textContent = '✓ Copied!';
@@ -375,8 +427,8 @@ function closeDetail() {
   const panel = document.getElementById('detail-panel');
   panel.classList.remove('open');
   panel.setAttribute('aria-hidden', 'true');
-  // Clear hash
-  history.pushState(null, '', window.location.pathname);
+  // Keep filter in hash but drop item
+  pushHash({ filter: activeCategory });
 }
 
 // ---- Lightbox ----
@@ -418,6 +470,13 @@ function bindEvents() {
       document.querySelectorAll('.nav-btn[data-filter]').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       renderGrid();
+      // Close any open detail panel and update hash
+      const panel = document.getElementById('detail-panel');
+      if (panel.classList.contains('open')) {
+        panel.classList.remove('open');
+        panel.setAttribute('aria-hidden', 'true');
+      }
+      pushHash({ filter: activeCategory });
     });
   });
 
@@ -463,13 +522,21 @@ function bindEvents() {
   });
   // Browser back/forward
   window.addEventListener('popstate', () => {
-    if (window.location.hash) {
-      const id = window.location.hash.slice(1);
-      if (allItems.find(i => i.id === id)) { openDetail(id); return; }
+    const { filter, item } = parseHash();
+    // Reset to 'all' if no filter in hash
+    const newFilter = filter || 'all';
+    if (newFilter !== activeCategory) {
+      activeCategory = newFilter;
+      document.querySelectorAll('.nav-btn[data-filter]').forEach(b => {
+        b.classList.toggle('active', b.dataset.filter === newFilter);
+      });
+      renderGrid();
     }
-    // No hash — close panel without pushing history again
+    // Open or close item
     const panel = document.getElementById('detail-panel');
-    if (panel.classList.contains('open')) {
+    if (item && allItems.find(i => i.id === item)) {
+      openDetailSilent(item);
+    } else if (panel.classList.contains('open')) {
       panel.classList.remove('open');
       panel.setAttribute('aria-hidden', 'true');
     }
