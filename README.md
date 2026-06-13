@@ -4,7 +4,7 @@ A living archive of t-shirts, hoodies, and swag from the open-source geo communi
 OpenStreetMap conferences, mapping parties, geo companies past and present, and beloved 
 concepts like Null Island.
 
-**[→ View the Museum](https://iandees.github.io/museum-of-spatial-shirts)**
+**[→ View the Museum](https://museumofspatialshirts.org)**
 
 ---
 
