@@ -65,6 +65,12 @@ async function init() {
   renderTagFilters();
   renderGrid();
   bindEvents();
+
+  // Open item from URL hash on load
+  if (window.location.hash) {
+    const id = window.location.hash.slice(1);
+    if (allItems.find(i => i.id === id)) openDetail(id);
+  }
 }
 
 // ---- Stats ----
@@ -239,6 +245,9 @@ function openDetail(id) {
   const item = allItems.find(i => i.id === id);
   if (!item) return;
 
+  // Update URL hash
+  history.pushState(null, '', `#${id}`);
+
   const panel = document.getElementById('detail-panel');
   const inner = document.getElementById('detail-inner');
 
@@ -312,7 +321,10 @@ function openDetail(id) {
   ).join('');
 
   inner.innerHTML = `
-    <button class="detail-close" id="detail-close-btn">← Back</button>
+    <div class="detail-top-row">
+      <button class="detail-close" id="detail-close-btn">← Back</button>
+      <button class="detail-share" id="detail-share-btn" title="Copy link">🔗 Copy link</button>
+    </div>
     <div class="card-badge-row">
       <span class="detail-category ${catClass}">${CATEGORY_ICONS[item.category] || ''} ${CATEGORY_LABELS[item.category] || item.category}</span>
       ${item.type ? `<span class="card-type-badge">${TYPE_ICONS[item.type] || ''} ${TYPE_LABELS[item.type] || item.type}</span>` : ''}
@@ -348,12 +360,23 @@ function openDetail(id) {
   });
 
   inner.querySelector('#detail-close-btn').addEventListener('click', closeDetail);
+
+  // Share / copy link button
+  inner.querySelector('#detail-share-btn').addEventListener('click', async (e) => {
+    const url = `${location.origin}${location.pathname}#${id}`;
+    await navigator.clipboard.writeText(url);
+    const btn = e.currentTarget;
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => btn.textContent = '🔗 Copy link', 2000);
+  });
 }
 
 function closeDetail() {
   const panel = document.getElementById('detail-panel');
   panel.classList.remove('open');
   panel.setAttribute('aria-hidden', 'true');
+  // Clear hash
+  history.pushState(null, '', window.location.pathname);
 }
 
 // ---- Lightbox ----
@@ -436,6 +459,19 @@ function bindEvents() {
       }
     } else if (detail.classList.contains('open')) {
       if (e.key === 'Escape') closeDetail();
+    }
+  });
+  // Browser back/forward
+  window.addEventListener('popstate', () => {
+    if (window.location.hash) {
+      const id = window.location.hash.slice(1);
+      if (allItems.find(i => i.id === id)) { openDetail(id); return; }
+    }
+    // No hash — close panel without pushing history again
+    const panel = document.getElementById('detail-panel');
+    if (panel.classList.contains('open')) {
+      panel.classList.remove('open');
+      panel.setAttribute('aria-hidden', 'true');
     }
   });
 }
