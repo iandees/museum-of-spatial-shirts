@@ -149,7 +149,7 @@ function renderGrid() {
     const icon = CATEGORY_PLACEHOLDER[item.category] || '👕';
 
     const thumbHtml = firstPhoto
-      ? `<img src="images/${firstPhoto.file}" alt="${escHtml(item.name)}" loading="lazy" />`
+      ? `<img src="images/thumb/${firstPhoto.file}" alt="${escHtml(item.name)}" loading="lazy" />`
       : `<div class="card-thumb-placeholder card-thumb-wanted">${icon}<span class="wanted-label">Photo wanted</span></div>`;
 
     const photoCountBadge = photoCount > 1
@@ -216,7 +216,7 @@ function openDetail(id) {
         <div class="detail-photos">
           ${item.photos.map((p, i) => `
             <div class="detail-photo-thumb" data-photo-index="${i}" data-item-id="${id}">
-              <img src="images/${p.file}" alt="${escHtml(p.caption || item.name)}" loading="lazy" />
+              <img src="images/thumb/${p.file}" alt="${escHtml(p.caption || item.name)}" loading="lazy" />
             </div>
           `).join('')}
         </div>
@@ -308,9 +308,13 @@ function renderLightboxFrame() {
   const photo = lightboxPhotos[lightboxIndex];
   const content = document.getElementById('lightbox-content');
   content.innerHTML = `
-    <img src="images/${photo.file}" alt="${escHtml(photo.caption || '')}" />
+    <img src="images/medium/${photo.file}" alt="${escHtml(photo.caption || '')}" />
     ${photo.caption ? `<div class="lightbox-caption">${escHtml(photo.caption)}${photo.credit ? ` — ${escHtml(photo.credit)}` : ''}</div>` : ''}
-    <div class="lightbox-caption" style="opacity:0.4">${lightboxIndex + 1} / ${lightboxPhotos.length}</div>
+    <div class="lightbox-caption" style="opacity:0.4">
+      ${lightboxIndex + 1} / ${lightboxPhotos.length}
+      &nbsp;&middot;&nbsp;
+      <a href="images/${photo.file}" target="_blank" rel="noopener" style="color:inherit">full resolution ↗</a>
+    </div>
   `;
 
   document.getElementById('lightbox-prev').style.display = lightboxPhotos.length > 1 ? '' : 'none';
