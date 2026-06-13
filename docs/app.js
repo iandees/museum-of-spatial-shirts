@@ -3,24 +3,21 @@
    ============================================================ */
 
 const CATEGORY_ICONS = {
-  event:      '📅',
-  concept:    '🌐',
-  company:    '🏢',
-  collection: '📦',
+  event:   '📅',
+  concept: '🌐',
+  company: '🏢',
 };
 
 const CATEGORY_LABELS = {
-  event:      'Event',
-  concept:    'Concept',
-  company:    'Company',
-  collection: 'Collection',
+  event:   'Event',
+  concept: 'Concept',
+  company: 'Company',
 };
 
 const CATEGORY_PLACEHOLDER = {
-  event:      '🗺️',
-  concept:    '🌏',
-  company:    '🏢',
-  collection: '👕',
+  event:   '🗺️',
+  concept: '🌏',
+  company: '🏢',
 };
 
 let allItems = [];
@@ -100,7 +97,9 @@ function renderTagFilters() {
 function getFilteredItems() {
   return allItems.filter(item => {
     // Category filter
-    if (activeCategory !== 'all' && item.category !== activeCategory) return false;
+    if (activeCategory === 'wanted') {
+      if ((item.photos?.length || 0) > 0) return false;
+    } else if (activeCategory !== 'all' && item.category !== activeCategory) return false;
 
     // Tag filter
     if (activeTags.size > 0) {
@@ -145,12 +144,13 @@ function renderGrid() {
     const firstPhoto = item.photos?.[0];
     const photoCount = item.photos?.length || 0;
     const storyCount = item.stories?.length || 0;
+    const wanted = photoCount === 0;
     const catClass = `cat-${item.category}`;
     const icon = CATEGORY_PLACEHOLDER[item.category] || '👕';
 
     const thumbHtml = firstPhoto
       ? `<img src="images/${firstPhoto.file}" alt="${escHtml(item.name)}" loading="lazy" />`
-      : `<div class="card-thumb-placeholder">${icon}</div>`;
+      : `<div class="card-thumb-placeholder card-thumb-wanted">${icon}<span class="wanted-label">Photo wanted</span></div>`;
 
     const photoCountBadge = photoCount > 1
       ? `<span class="card-photo-count">📷 ${photoCount}</span>`
@@ -170,7 +170,7 @@ function renderGrid() {
       : '';
 
     return `
-      <article class="card" data-id="${item.id}" role="button" tabindex="0" aria-label="Open ${escHtml(item.name)}">
+      <article class="card ${wanted ? 'card-wanted' : ''}" data-id="${item.id}" role="button" tabindex="0" aria-label="Open ${escHtml(item.name)}">
         <div class="card-thumb">
           ${thumbHtml}
           ${photoCountBadge}
@@ -223,7 +223,11 @@ function openDetail(id) {
       </div>`
     : `<div>
         <div class="detail-section-title">Photos</div>
-        <p style="font-size:0.82rem;color:var(--text-dim);">No photos yet — be the first to contribute!</p>
+        <a class="story-add-link"
+           href="https://github.com/iandees/museum-of-spatial-shirts/issues/new?template=add-shirt.md&title=Photo+for%3A+${encodeURIComponent(item.name)}"
+           target="_blank" rel="noopener">
+          📷 Do you have a photo of this shirt? Contribute one!
+        </a>
       </div>`;
 
   const storiesHtml = `

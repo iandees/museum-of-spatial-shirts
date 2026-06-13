@@ -2,16 +2,67 @@
   "lastUpdated": "2024-01-01",
   "items": [
     {
+      "id": "sotm-us-2010",
+      "name": "State of the Map US 2010",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2010,
+      "location": "Atlanta, GA",
+      "url": "https://openstreetmap.us/events/state-of-the-map-us/2010/",
+      "description": "The first-ever State of the Map US, held in Atlanta, Georgia. Do you have a shirt from this event?",
+      "tags": ["openstreetmap", "sotmus", "conference", "atlanta", "georgia"],
+      "photos": [],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2012",
+      "name": "State of the Map US 2012",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2012,
+      "location": "Portland, OR",
+      "url": "https://openstreetmap.us/events/state-of-the-map-us/2012/",
+      "description": "State of the Map US 2012, held in Portland, Oregon. Do you have a shirt from this event?",
+      "tags": ["openstreetmap", "sotmus", "conference", "portland", "oregon"],
+      "photos": [],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2013",
+      "name": "State of the Map US 2013",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2013,
+      "location": "San Francisco, CA",
+      "url": "https://openstreetmap.us/events/state-of-the-map-us/2013/",
+      "description": "State of the Map US 2013, held in San Francisco, California. Do you have a shirt from this event?",
+      "tags": ["openstreetmap", "sotmus", "conference", "san-francisco", "california"],
+      "photos": [],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2014",
+      "name": "State of the Map US 2014",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2014,
+      "location": "Washington, DC",
+      "url": "https://openstreetmap.us/events/state-of-the-map-us/2014/",
+      "description": "State of the Map US 2014, held in Washington, DC. Do you have a shirt from this event?",
+      "tags": ["openstreetmap", "sotmus", "conference", "washington-dc"],
+      "photos": [],
+      "stories": []
+    },
+    {
       "id": "sotm-us-2015",
       "name": "State of the Map US 2015",
       "category": "event",
       "event": "State of the Map US",
       "year": 2015,
       "location": "New York, NY",
-      "url": "https://2015.stateofthemap.us/",
       "venue": "UN Headquarters",
-      "description": "Held at the United Nations headquarters in New York City, SotM US 2015 was a landmark event for the OpenStreetMap community. The shirt was designed by Tatiana van Campenhout.",
       "url": "https://2015.stateofthemap.us/",
+      "description": "Held at the United Nations headquarters in New York City, SotM US 2015 was a landmark event for the OpenStreetMap community. The shirt was designed by Tatiana van Campenhout.",
       "tags": ["openstreetmap", "sotmus", "conference", "new-york", "un"],
       "designer": "Tatiana van Campenhout",
       "photos": [
@@ -79,12 +130,12 @@
       "photos": [
         {
           "file": "PXL_20231231_165639861.jpg",
-          "caption": "SotM US Detroit shirt — front",
+          "caption": "SotM US 2018 Detroit shirt — front",
           "credit": ""
         },
         {
           "file": "PXL_20231231_165649697.jpg",
-          "caption": "SotM US Detroit shirt — back",
+          "caption": "SotM US 2018 Detroit shirt — back",
           "credit": ""
         }
       ],
@@ -145,6 +196,32 @@
           "credit": ""
         }
       ],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2024",
+      "name": "State of the Map US 2024",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2024,
+      "location": "Salt Lake City, UT",
+      "url": "https://2024.stateofthemap.us/",
+      "description": "State of the Map US 2024, held in Salt Lake City, Utah. Do you have a shirt from this event?",
+      "tags": ["openstreetmap", "sotmus", "conference", "salt-lake-city", "utah"],
+      "photos": [],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2025",
+      "name": "State of the Map US 2025",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2025,
+      "location": "Boston, MA",
+      "url": "https://2025.stateofthemap.us/",
+      "description": "State of the Map US 2025, held in Boston, Massachusetts. Do you have a shirt from this event?",
+      "tags": ["openstreetmap", "sotmus", "conference", "boston", "massachusetts"],
+      "photos": [],
       "stories": []
     },
     {
