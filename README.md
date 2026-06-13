@@ -39,7 +39,7 @@ Each item in `public/collection.json` looks like this:
 {
   "id": "sotm-us-2019",
   "name": "State of the Map US 2019",
-  "category": "event",
+  "category": "event",          // event | concept | company | sticker
   "year": 2019,
   "location": "Minneapolis, MN",
   "description": "The annual US OpenStreetMap conference…",

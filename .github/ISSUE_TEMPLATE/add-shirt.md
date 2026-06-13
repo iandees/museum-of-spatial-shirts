@@ -12,7 +12,7 @@ assignees: ''
 <!-- e.g. "State of the Map US 2019", "Null Island", "Mapzen" -->
 
 **Category:** 
-<!-- one of: event | concept | company | collection -->
+<!-- one of: event | concept | company | sticker -->
 
 **Year / Year Range:** 
 <!-- e.g. 2019, or "2015–2017" for a company range -->

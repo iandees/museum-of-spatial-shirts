@@ -6,18 +6,21 @@ const CATEGORY_ICONS = {
   event:   '📅',
   concept: '🌐',
   company: '🏢',
+  sticker: '✨',
 };
 
 const CATEGORY_LABELS = {
   event:   'Event',
   concept: 'Concept',
   company: 'Company',
+  sticker: 'Sticker',
 };
 
 const CATEGORY_PLACEHOLDER = {
   event:   '🗺️',
   concept: '🌏',
   company: '🏢',
+  sticker: '✨',
 };
 
 let allItems = [];
@@ -219,7 +222,7 @@ function openDetail(id) {
               <div class="detail-photo-thumb" data-photo-index="${i}" data-item-id="${id}">
                 <img src="images/thumb/${p.file}" alt="${escHtml(p.caption || item.name)}" loading="lazy" />
               </div>
-              ${p.credit ? `<div class="detail-photo-credit">© ${escHtml(p.credit)}</div>` : ''}
+              ${p.credit ? `<div class="detail-photo-credit">Photo by ${escHtml(p.credit)}</div>` : ''}
             </div>
           `).join('')}
         </div>
@@ -312,7 +315,7 @@ function renderLightboxFrame() {
   const content = document.getElementById('lightbox-content');
   content.innerHTML = `
     <img src="images/medium/${photo.file}" alt="${escHtml(photo.caption || '')}" />
-    ${photo.caption ? `<div class="lightbox-caption">${escHtml(photo.caption)}${photo.credit ? ` — ${escHtml(photo.credit)}` : ''}</div>` : ''}
+    ${photo.caption ? `<div class="lightbox-caption">${escHtml(photo.caption)}${photo.credit ? ` — photo by ${escHtml(photo.credit)}` : ''}</div>` : ''}
     <div class="lightbox-caption" style="opacity:0.4">
       ${lightboxIndex + 1} / ${lightboxPhotos.length}
       &nbsp;&middot;&nbsp;

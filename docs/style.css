@@ -364,7 +364,7 @@ a:hover { text-decoration: underline; }
 .cat-event   { background: #1a3350; color: #4f8ef7; border: 1px solid #1e4070; }
 .cat-concept { background: #1f1535; color: #a77bff; border: 1px solid #3a2060; }
 .cat-company { background: #0f2b20; color: #3ecf8e; border: 1px solid #1a4535; }
-.cat-collection { background: #2b1f10; color: #f0a040; border: 1px solid #4a3520; }
+.cat-sticker { background: #2b2510; color: #f0c040; border: 1px solid #4a3f20; }
 
 .card-title {
   font-size: 1.05rem;
