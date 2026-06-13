@@ -48,7 +48,7 @@ Each item in `public/collection.json` looks like this:
     {
       "file": "sotm-us-2019-front.jpg",
       "caption": "Front of the shirt",
-      "credit": "Photo by @iandees"
+      "credit": "Your Name"  // photo credit shown in the UI
     }
   ],
   "stories": [

@@ -215,8 +215,11 @@ function openDetail(id) {
         <div class="detail-section-title">Photos (${item.photos.length})</div>
         <div class="detail-photos">
           ${item.photos.map((p, i) => `
-            <div class="detail-photo-thumb" data-photo-index="${i}" data-item-id="${id}">
-              <img src="images/thumb/${p.file}" alt="${escHtml(p.caption || item.name)}" loading="lazy" />
+            <div class="detail-photo-wrap">
+              <div class="detail-photo-thumb" data-photo-index="${i}" data-item-id="${id}">
+                <img src="images/thumb/${p.file}" alt="${escHtml(p.caption || item.name)}" loading="lazy" />
+              </div>
+              ${p.credit ? `<div class="detail-photo-credit">© ${escHtml(p.credit)}</div>` : ''}
             </div>
           `).join('')}
         </div>

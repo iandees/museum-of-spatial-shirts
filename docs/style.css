@@ -597,6 +597,21 @@ a:hover { text-decoration: underline; }
   gap: 0.6rem;
 }
 
+.detail-photo-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.detail-photo-credit {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .detail-photo-thumb {
   aspect-ratio: 1;
   border-radius: var(--radius-sm);
