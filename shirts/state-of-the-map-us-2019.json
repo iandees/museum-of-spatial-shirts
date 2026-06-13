@@ -1,0 +1,12 @@
+{
+  "id": "state-of-the-map-us-2019",
+  "name": "State of the Map US 2019",
+  "category": "event",
+  "event": "State of the Map US",
+  "year": 2019,
+  "location": "Minneapolis, MN",
+  "description": "The annual US OpenStreetMap conference, held in Minneapolis. A gathering of mappers, developers, and open data enthusiasts from across North America.",
+  "tags": ["openstreetmap", "sotmus", "conference"],
+  "photos": [],
+  "stories": []
+}

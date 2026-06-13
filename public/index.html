@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museum of Spatial Shirts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <span class="header-icon">🗺️</span>
+        <div>
+          <h1>Museum of Spatial Shirts</h1>
+          <p class="header-subtitle">A living archive of open-source geo community swag</p>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <button class="nav-btn active" data-filter="all">All</button>
+        <button class="nav-btn" data-filter="event">Events</button>
+        <button class="nav-btn" data-filter="concept">Concepts</button>
+        <button class="nav-btn" data-filter="company">Companies</button>
+        <button class="nav-btn" data-filter="collection">Collections</button>
+        <a class="nav-btn nav-btn-contribute" href="#contribute">+ Contribute</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-text">
+        Every conference shirt, every company hoodie, every hand-screened tee from a 
+        mapping party — they carry the history of the open geo movement. This museum 
+        preserves them before they fade or are lost to time.
+      </p>
+      <div class="hero-stats" id="hero-stats">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <input type="search" id="search-input" placeholder="Search shirts, events, tags…" />
+      <div class="tag-filters" id="tag-filters">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY GRID -->
+  <main class="gallery-section">
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- filled by JS -->
+    </div>
+    <div class="empty-state" id="empty-state" style="display:none">
+      <span>🌐</span>
+      <p>No items match your search.</p>
+    </div>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-content" id="lightbox-content">
+      <!-- filled by JS -->
+    </div>
+  </div>
+
+  <!-- ITEM DETAIL PANEL -->
+  <div class="detail-panel" id="detail-panel" aria-hidden="true">
+    <div class="detail-overlay" id="detail-overlay"></div>
+    <div class="detail-inner" id="detail-inner">
+      <!-- filled by JS -->
+    </div>
+  </div>
+
+  <!-- CONTRIBUTE SECTION -->
+  <section class="contribute-section" id="contribute">
+    <div class="contribute-inner">
+      <h2>Add to the Collection</h2>
+      <p>
+        Do you have a geo shirt, sticker, or swag item with a story? 
+        Help preserve the history of the open mapping community.
+      </p>
+      <div class="contribute-cards">
+        <div class="contribute-card">
+          <div class="contribute-card-icon">📬</div>
+          <h3>Open an Issue</h3>
+          <p>
+            The easiest way. Open a GitHub Issue with your photo and any stories 
+            or metadata you know, and we'll add it to the collection.
+          </p>
+          <a class="btn btn-primary" 
+             href="https://github.com/iandees/museum-of-spatial-shirts/issues/new?template=add-shirt.md&title=New+shirt%3A+%5Bname+here%5D"
+             target="_blank" rel="noopener">
+            Open an Issue →
+          </a>
+        </div>
+        <div class="contribute-card">
+          <div class="contribute-card-icon">🔀</div>
+          <h3>Pull Request</h3>
+          <p>
+            If you're comfortable with GitHub, fork the repo, add your image to 
+            <code>public/images/</code>, and add an entry to 
+            <code>public/collection.json</code> with a metadata entry.
+          </p>
+          <a class="btn btn-secondary" 
+             href="https://github.com/iandees/museum-of-spatial-shirts"
+             target="_blank" rel="noopener">
+            View on GitHub →
+          </a>
+        </div>
+        <div class="contribute-card">
+          <div class="contribute-card-icon">💬</div>
+          <h3>Share a Story</h3>
+          <p>
+            Know the history behind a shirt already in the collection? 
+            Add a story — where it came from, who made it, what that event meant to you.
+          </p>
+          <a class="btn btn-secondary" 
+             href="https://github.com/iandees/museum-of-spatial-shirts/issues/new?template=add-story.md&title=Story+for%3A+%5Bshirt+name%5D"
+             target="_blank" rel="noopener">
+            Share a Story →
+          </a>
+        </div>
+      </div>
+      <div class="contribute-format">
+        <h3>Data Format</h3>
+        <p>Each item in <code>collection.json</code> looks like this:</p>
+        <pre><code>{
+  "id": "sotm-us-2019",
+  "name": "State of the Map US 2019",
+  "category": "event",          // event | concept | company | collection
+  "year": 2019,
+  "location": "Minneapolis, MN",
+  "description": "The annual US OpenStreetMap conference…",
+  "tags": ["openstreetmap", "sotmus"],
+  "photos": [
+    {
+      "file": "sotm-us-2019-front.jpg",
+      "caption": "Front of the shirt",
+      "credit": "Photo by @iandees"
+    }
+  ],
+  "stories": [
+    {
+      "author": "Your Name",
+      "text": "I wore this shirt to my first mapping party…"
+    }
+  ]
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>
+        <strong>Museum of Spatial Shirts</strong> — 
+        A community archive of open-source geo swag. 
+        <a href="https://github.com/iandees/museum-of-spatial-shirts" target="_blank" rel="noopener">GitHub</a>
+        · 
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>
+      </p>
+      <p class="footer-small">
+        Not affiliated with any specific organization. 
+        Photos contributed by the community under open licenses.
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

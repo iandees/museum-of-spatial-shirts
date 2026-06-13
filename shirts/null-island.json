@@ -1,0 +1,15 @@
+{
+  "id": "null-island",
+  "name": "Null Island",
+  "category": "concept",
+  "year": null,
+  "description": "The mythical island at 0°N 0°E — the point in the ocean where a latitude of 0 meets a longitude of 0. In GIS, it's become famous as the place where data with missing or zero coordinates magically 'lands'. A beloved in-joke of the geo world.",
+  "tags": ["null-island", "geo-humor", "coordinates", "concept"],
+  "photos": [],
+  "stories": [
+    {
+      "author": "Anonymous",
+      "text": "If you work in GIS long enough, you'll eventually send thousands of points to Null Island by accident."
+    }
+  ]
+}

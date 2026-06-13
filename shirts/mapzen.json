@@ -1,0 +1,11 @@
+{
+  "id": "mapzen",
+  "name": "Mapzen",
+  "category": "company",
+  "year": null,
+  "yearRange": "2010–2017",
+  "description": "Mapzen was a beloved open-source mapping company that built tools like Tangram (WebGL map renderer), Pelias (geocoder), Valhalla (routing engine), and Mapzen Search. The company shut down in January 2018, but many of its projects live on as open source foundations.",
+  "tags": ["mapzen", "company", "open-source", "geocoding", "routing"],
+  "photos": [],
+  "stories": []
+}

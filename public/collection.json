@@ -1,0 +1,214 @@
+{
+  "lastUpdated": "2024-01-01",
+  "items": [
+    {
+      "id": "sotm-us-2015",
+      "name": "State of the Map US 2015",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2015,
+      "location": "New York, NY",
+      "url": "https://2015.stateofthemap.us/",
+      "venue": "UN Headquarters",
+      "description": "Held at the United Nations headquarters in New York City, SotM US 2015 was a landmark event for the OpenStreetMap community. The shirt was designed by Tatiana van Campenhout.",
+      "url": "https://2015.stateofthemap.us/",
+      "tags": ["openstreetmap", "sotmus", "conference", "new-york", "un"],
+      "designer": "Tatiana van Campenhout",
+      "photos": [
+        {
+          "file": "PXL_20210223_140416550.jpg",
+          "caption": "SotM US 2015 shirt, designed by Tatiana van Campenhout",
+          "credit": ""
+        }
+      ],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2016",
+      "name": "State of the Map US 2016",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2016,
+      "location": "Seattle, WA",
+      "url": "https://2016.stateofthemap.us/",
+      "description": "State of the Map US 2016, held in Seattle, Washington.",
+      "tags": ["openstreetmap", "sotmus", "conference", "seattle"],
+      "photos": [
+        {
+          "file": "PXL_20230609_214121934~2.jpg",
+          "caption": "SotM US 2016 shirt from Seattle",
+          "credit": ""
+        }
+      ],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2017",
+      "name": "State of the Map US 2017",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2017,
+      "location": "Boulder, CO",
+      "url": "https://2017.stateofthemap.us/",
+      "description": "State of the Map US 2017, held in Boulder, Colorado. Two shirt styles were made for this event.",
+      "tags": ["openstreetmap", "sotmus", "conference", "boulder", "colorado"],
+      "photos": [
+        {
+          "file": "PXL_20231231_165548649.MP.jpg",
+          "caption": "SotM US 2017 shirt, Boulder style 1",
+          "credit": ""
+        },
+        {
+          "file": "PXL_20231231_165605471.jpg",
+          "caption": "SotM US 2017 shirt, Boulder style 2",
+          "credit": ""
+        }
+      ],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2018",
+      "name": "State of the Map US 2018",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2018,
+      "location": "Detroit, MI",
+      "url": "https://2018.stateofthemap.us/",
+      "description": "State of the Map US 2018, held in Detroit, Michigan.",
+      "tags": ["openstreetmap", "sotmus", "conference", "detroit", "michigan"],
+      "photos": [
+        {
+          "file": "PXL_20231231_165639861.jpg",
+          "caption": "SotM US Detroit shirt — front",
+          "credit": ""
+        },
+        {
+          "file": "PXL_20231231_165649697.jpg",
+          "caption": "SotM US Detroit shirt — back",
+          "credit": ""
+        }
+      ],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2019",
+      "name": "State of the Map US 2019",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2019,
+      "location": "Minneapolis, MN",
+      "url": "https://2019.stateofthemap.us/",
+      "description": "State of the Map US 2019, held in Minneapolis, Minnesota.",
+      "tags": ["openstreetmap", "sotmus", "conference", "minneapolis", "minnesota"],
+      "photos": [
+        {
+          "file": "PXL_20231231_165529574.MP.jpg",
+          "caption": "SotM US 2019 shirt from Minneapolis",
+          "credit": ""
+        }
+      ],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2022",
+      "name": "State of the Map US 2022",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2022,
+      "location": "Tucson, AZ",
+      "url": "https://2022.stateofthemap.us/",
+      "description": "State of the Map US 2022, held in Tucson, Arizona. The first SotM US after a three-year gap caused by the COVID-19 pandemic.",
+      "tags": ["openstreetmap", "sotmus", "conference", "tucson", "arizona"],
+      "photos": [
+        {
+          "file": "PXL_20231231_165724768.jpg",
+          "caption": "SotM US 2022 shirt from Tucson",
+          "credit": ""
+        }
+      ],
+      "stories": []
+    },
+    {
+      "id": "sotm-us-2023",
+      "name": "State of the Map US 2023",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2023,
+      "location": "Richmond, VA",
+      "url": "https://2023.stateofthemap.us/",
+      "description": "State of the Map US 2023, held in Richmond, Virginia.",
+      "tags": ["openstreetmap", "sotmus", "conference", "richmond", "virginia"],
+      "photos": [
+        {
+          "file": "PXL_20231231_165800178.jpg",
+          "caption": "SotM US 2023 shirt from Richmond",
+          "credit": ""
+        }
+      ],
+      "stories": []
+    },
+    {
+      "id": "mapbox-2016",
+      "name": "Mapbox (c. 2016)",
+      "category": "company",
+      "year": 2016,
+      "description": "A t-shirt from Mapbox, the mapping platform and tools company behind many foundational open-source geo projects. Printed around 2016.",
+      "tags": ["mapbox", "company"],
+      "photos": [
+        {
+          "file": "PXL_20210223_140324011.jpg",
+          "caption": "Mapbox shirt, c. 2016 — front",
+          "credit": ""
+        },
+        {
+          "file": "PXL_20231231_165808518.jpg",
+          "caption": "Mapbox shirt, c. 2016 — another view",
+          "credit": ""
+        }
+      ],
+      "stories": []
+    },
+    {
+      "id": "mapzen-null-island",
+      "name": "Null Island (Mapzen)",
+      "category": "concept",
+      "year": null,
+      "description": "A t-shirt depicting Null Island — the mythical point at 0°N 0°E where data with missing or zeroed-out coordinates mysteriously \"lands\". Designed and printed by someone at Mapzen, the beloved open-source mapping company.",
+      "tags": ["null-island", "mapzen", "geo-humor", "concept"],
+      "photos": [
+        {
+          "file": "PXL_20210223_140354009.jpg",
+          "caption": "Mapzen Null Island shirt",
+          "credit": ""
+        },
+        {
+          "file": "PXL_20231231_165706201.jpg",
+          "caption": "Null Island shirt (Mapzen), another view",
+          "credit": ""
+        }
+      ],
+      "stories": [
+        {
+          "author": "The Geo Community",
+          "text": "If you work in GIS long enough, you'll eventually send thousands of points to Null Island by accident. Mapzen immortalized the gag on a shirt."
+        }
+      ]
+    },
+    {
+      "id": "streetcred-map-nyc",
+      "name": "StreetCred — Map NYC",
+      "category": "company",
+      "year": null,
+      "description": "A \"Map NYC\" t-shirt from StreetCred, a now-defunct geo startup that aimed to build a community-powered places database. A relic of the busy late-2010s wave of open geo companies.",
+      "tags": ["streetcred", "company", "new-york", "places"],
+      "photos": [
+        {
+          "file": "PXL_20231231_165618163.jpg",
+          "caption": "StreetCred 'Map NYC' shirt",
+          "credit": ""
+        }
+      ],
+      "stories": []
+    }
+  ]
+}
