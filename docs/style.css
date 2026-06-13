@@ -749,6 +749,15 @@ a:hover { text-decoration: underline; }
   color: var(--accent-green);
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.story-date {
+  font-weight: 400;
+  color: var(--text-dim);
+  font-size: 0.75rem;
 }
 
 .story-add-link {

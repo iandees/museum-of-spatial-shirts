@@ -18,6 +18,10 @@ assignees: ''
 
 <!-- How should we credit you? Leave blank to be anonymous. -->
 
+## Date
+
+<!-- Approximate date you're sharing this, e.g. "June 2025" -->
+
 ---
 
 *Stories make the museum come alive — thank you!* 💬

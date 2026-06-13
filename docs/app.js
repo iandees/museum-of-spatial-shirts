@@ -333,7 +333,10 @@ function openDetailSilent(id) {
       <div class="detail-section-title">Stories</div>
       ${(item.stories || []).map(s => `
         <div class="story-card" style="margin-bottom:0.6rem">
-          <div class="story-author">${escHtml(s.author || 'Anonymous')}</div>
+          <div class="story-author">
+            ${escHtml(s.author || 'Anonymous')}
+            ${s.date ? `<span class="story-date">${escHtml(s.date)}</span>` : ''}
+          </div>
           ${escHtml(s.text)}
         </div>
       `).join('')}

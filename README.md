@@ -55,6 +55,7 @@ Each item in `public/collection.json` looks like this:
   "stories": [
     {
       "author": "Your Name",
+      "date": "June 2025",
       "text": "I wore this shirt to my first mapping party…"
     }
   ]

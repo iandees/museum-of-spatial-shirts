@@ -362,12 +362,7 @@
           "credit": "Ian Dees"
         }
       ],
-      "stories": [
-        {
-          "author": "The Geo Community",
-          "text": "If you work in GIS long enough, you'll eventually send thousands of points to Null Island by accident. Mapzen immortalized the gag on a shirt."
-        }
-      ],
+      "stories": [],
       "type": "shirt"
     },
     {
