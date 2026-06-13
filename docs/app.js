@@ -345,9 +345,9 @@ function openDetailSilent(id) {
     </div>
   `;
 
-  // Related items — same event, different type
-  const related = item.event
-    ? allItems.filter(i => i.id !== item.id && i.event === item.event)
+  // Related items — same event AND same year, different id
+  const related = (item.event && item.year)
+    ? allItems.filter(i => i.id !== item.id && i.event === item.event && i.year === item.year)
     : [];
 
   const relatedHtml = related.length
