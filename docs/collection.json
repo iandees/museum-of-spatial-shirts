@@ -345,8 +345,28 @@
       "type": "shirt"
     },
     {
+      "id": "mapbox-motorcycle-moon",
+      "name": "Mapbox — Motorcycle on Moon",
+      "category": "company",
+      "year": 2016,
+      "description": "One of the more sought-after Mapbox shirts, featuring a motorcycle on the moon. Designed by Ryan Ford.",
+      "tags": [
+        "mapbox",
+        "company"
+      ],
+      "designer": "Ryan Ford",
+      "photos": [
+        {
+          "file": "mapbox-motorcycle-moon.jpg",
+          "caption": "Mapbox Motorcycle on Moon shirt",
+          "credit": "Marc Prioleau"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
       "id": "mapzen-null-island",
-      "name": "Null Island (Mapzen)",
       "category": "concept",
       "year": null,
       "description": "A t-shirt depicting Null Island — the mythical point at 0°N 0°E where data with missing or zeroed-out coordinates mysteriously \"lands\". Designed and printed by someone at Mapzen, the beloved open-source mapping company.",
