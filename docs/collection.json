@@ -281,7 +281,7 @@
       "year": 2024,
       "location": "Salt Lake City, UT",
       "url": "https://2024.stateofthemap.us/",
-      "description": "State of the Map US 2024, held in Salt Lake City, Utah. Do you have a shirt from this event?",
+      "description": "State of the Map US 2024, held in Salt Lake City, Utah.",
       "tags": [
         "openstreetmap",
         "sotmus",
@@ -289,7 +289,13 @@
         "salt-lake-city",
         "utah"
       ],
-      "photos": [],
+      "photos": [
+        {
+          "file": "sotm-us-2024-shirt.jpg",
+          "caption": "SotM US 2024 shirt from Salt Lake City",
+          "credit": "Sean Gorman"
+        }
+      ],
       "stories": [],
       "type": "shirt"
     },
