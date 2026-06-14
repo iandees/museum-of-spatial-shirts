@@ -392,7 +392,7 @@
       "name": "Blood, Sweat, & Maps",
       "category": "company",
       "year": null,
-      "description": "Swag for Mapquest employees",
+      "description": "Swag for Mapquest employees.  Mapquest implemented OSM maps and geocoding in ~2013 as an alternative to its commercial offerings.",
       "tags": [
         "mapquest",
         "company",
