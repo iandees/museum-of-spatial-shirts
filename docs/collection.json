@@ -307,7 +307,7 @@
       "year": 2025,
       "location": "Boston, MA",
       "url": "https://2025.stateofthemap.us/",
-      "description": "State of the Map US 2025, held in Boston, Massachusetts. Do you have a shirt from this event?",
+      "description": "State of the Map US 2025, held in Boston, Massachusetts.",
       "tags": [
         "openstreetmap",
         "sotmus",
@@ -315,7 +315,39 @@
         "boston",
         "massachusetts"
       ],
-      "photos": [],
+      "photos": [
+        {
+          "file": "PXL_20260614_115526107.jpg",
+          "caption": "SotM US 2025 shirt from Boston",
+          "credit": "Ian Dees"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "sotm-us-2026",
+      "name": "State of the Map US 2026",
+      "category": "event",
+      "event": "State of the Map US",
+      "year": 2026,
+      "location": "Madison, WI",
+      "url": "https://2026.stateofthemap.us/",
+      "description": "State of the Map US 2026, held in Madison, Wisconsin.",
+      "tags": [
+        "openstreetmap",
+        "sotmus",
+        "conference",
+        "madison",
+        "wisconsin"
+      ],
+      "photos": [
+        {
+          "file": "PXL_20260614_115449699.jpg",
+          "caption": "SotM US 2026 shirt from Madison",
+          "credit": "Ian Dees"
+        }
+      ],
       "stories": [],
       "type": "shirt"
     },
