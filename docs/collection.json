@@ -386,6 +386,28 @@
       ],
       "stories": [],
       "type": "shirt"
+    },
+    {
+      "id": "mapquest-blood-sweat-maps",
+      "name": "Blood, Sweat, & Maps",
+      "category": "company",
+      "year": null,
+      "description": "Swag for Mapquest employees",
+      "tags": [
+        "mapquest",
+        "company",
+        "lancaster-pa",
+        "places"
+      ],
+      "photos": [
+        {
+          "file": "PXL_20231231_165618163.jpg",
+          "caption": "Mapquest 'Blood, Sweat, & Maps' shirt",
+          "credit": "Stephen Hess"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
     }
   ]
 }
