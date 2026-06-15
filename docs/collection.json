@@ -222,6 +222,31 @@
       "type": "shirt"
     },
     {
+      "id": "sotm-2020",
+      "name": "State of the Map 2020",
+      "category": "event",
+      "event": "State of the Map",
+      "year": 2020,
+      "location": "Online",
+      "url": "https://2020.stateofthemap.org/",
+      "description": "State of the Map 2020, held online.",
+      "tags": [
+        "openstreetmap",
+        "sotm",
+        "conference",
+        "online"
+      ],
+      "photos": [
+        {
+          "file": "sotm-2020.jpg",
+          "caption": "SotM 2020 shirt",
+          "credit": "Jez Nicholson"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
       "id": "sotm-us-2022",
       "name": "State of the Map US 2022",
       "category": "event",
@@ -242,6 +267,36 @@
           "file": "PXL_20231231_165724768.jpg",
           "caption": "SotM US 2022 shirt from Tucson",
           "credit": "Ian Dees"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "sotm-eu-2023",
+      "name": "State of the Map EU 2023",
+      "category": "event",
+      "event": "State of the Map EU",
+      "year": 2023,
+      "location": "Antwerp, Belgium",
+      "url": "https://2023.stateofthemap.eu/",
+      "description": "State of the Map EU 2023, held in Antwerp, Belgium.",
+      "tags": [
+        "openstreetmap",
+        "sotmeu",
+        "conference",
+        "belgium"
+      ],
+      "photos": [
+        {
+          "file": "sotm-eu-2023.jpg",
+          "caption": "SotMEU 2023 shirt",
+          "credit": "Jez Nicholson"
+        },
+        {
+          "file": "sotm-eu-2023-back.jpg",
+          "caption": "SotMEU 2023 shirt back",
+          "credit": "Jez Nicholson"
         }
       ],
       "stories": [],

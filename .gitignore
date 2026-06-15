@@ -1,3 +1,4 @@
 # Generated image derivatives — built by CI, never committed
 docs/images/thumb/
 docs/images/medium/
+.DS_Store
