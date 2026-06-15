@@ -352,6 +352,30 @@
       "type": "shirt"
     },
     {
+      "id": "mapbox-locate-2018",
+      "name": "Mapbox Locate 2018",
+      "category": "event",
+      "event": "Mapbox Locate",
+      "year": 2018,
+      "location": "San Francisco, CA",
+      "description": "Locate was the first (and only) developer conference hosted by Mapbox. Held in San Francisco in 2018, it drew about 1,400 attendees from the geo and developer communities.",
+      "tags": [
+        "mapbox",
+        "locate",
+        "conference",
+        "san-francisco"
+      ],
+      "photos": [
+        {
+          "file": "mapbox-locate-2018.jpg",
+          "caption": "Mapbox Locate 2018 shirt",
+          "credit": "Marc Prioleau"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
       "id": "mapbox-2016",
       "name": "Mapbox (c. 2016)",
       "category": "company",
