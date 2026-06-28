@@ -76,7 +76,13 @@
         "conference",
         "washington-dc"
       ],
-      "photos": [],
+      "photos": [
+        {
+          "file": "sotm-us-2014.jpb",
+          "caption": "SotM US 2014 shirt",
+          "credit": "Brian DeRocher"
+        }
+      ],
       "stories": [],
       "type": "shirt"
     },
