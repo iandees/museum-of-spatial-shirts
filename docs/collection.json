@@ -69,14 +69,20 @@
       "year": 2014,
       "location": "Washington, DC",
       "url": "https://openstreetmap.us/events/state-of-the-map-us/2014/",
-      "description": "State of the Map US 2014, held in Washington, DC. Do you have a shirt from this event?",
+      "description": "State of the Map US 2014, held in Washington, DC.",
       "tags": [
         "openstreetmap",
         "sotmus",
         "conference",
         "washington-dc"
       ],
-      "photos": [],
+      "photos": [
+        {
+          "file": "sotm-us-2014-shirt.jpg",
+          "caption": "SOTM US 2014 Shirt",
+          "credit": "Brian DeRocher"
+        }
+      ],
       "stories": [],
       "type": "shirt"
     },
