@@ -49,7 +49,7 @@
       "year": 2013,
       "location": "San Francisco, CA",
       "url": "https://openstreetmap.us/events/state-of-the-map-us/2013/",
-      "description": "State of the Map US 2013, held in San Francisco, California. Do you have a shirt from this event?",
+      "description": "State of the Map US 2013, held in San Francisco, California.",
       "tags": [
         "openstreetmap",
         "sotmus",
@@ -57,7 +57,13 @@
         "san-francisco",
         "california"
       ],
-      "photos": [],
+      "photos": [
+        {
+          "file": "sotm-us-2013-photo2.jpg",
+          "caption": "State of the Map US 2013 shirt",
+          "credit": "Marc Prioleau"
+        }
+      ],
       "stories": [],
       "type": "shirt"
     },
@@ -756,6 +762,116 @@
       ],
       "stories": [],
       "type": "shirt"
+    },
+    {
+      "id": "open-data-camp-2015",
+      "name": "Open Data Camp",
+      "category": "event",
+      "event": "Open Data Camp",
+      "year": 2015,
+      "location": "Hampshire, UK",
+      "url": "https://opendatacamp.org/",
+      "description": "Open Data Camp is a UK unconference series bringing together people who publish, use, and campaign for open data.",
+      "tags": [
+        "open-data",
+        "unconference",
+        "United Kingdom"
+      ],
+      "photos": [
+        {
+          "file": "open-data-camp-2015.jpg",
+          "caption": "Open Data Camp shirt",
+          "credit": "Gregory Marler"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "osmand-expert",
+      "name": "OsmAnd Expert",
+      "category": "company",
+      "description": "These were sent to OpenStreetMap contributors that had reached a certain level of mapping and contacted the OsmAnd team.",
+      "tags": [
+        "openstreetmap",
+        "osmand"
+      ],
+      "photos": [
+        {
+          "file": "osmand-expert.jpg",
+          "caption": "OsmAnd Expert shirt",
+          "credit": "Gregory Marler"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "sotm-eu-2025",
+      "name": "State of the Map Europe 2025",
+      "category": "event",
+      "event": "State of the Map Europe",
+      "year": 2025,
+      "location": "Dundee, United Kingdom",
+      "url": "https://2025.stateofthemap.eu/",
+      "description": "The penguin on the logo is an important symbol of Dundee due to its links with Antarctic exploration, and there are several penguin sculptures in the city, one of which briefly wore the conference shirt. On the belly are building shapes of the city centre. Conference volunteers had matching t-shirts with the addition of \"MAP TEAM\" on the back.",
+      "tags": [
+        "openstreetmap",
+        "sotmeu",
+        "conference",
+        "Scotland",
+        "United Kingdom",
+        "team",
+        "delegate"
+      ],
+      "photos": [
+        {
+          "file": "sotm-eu-2025-1.jpg",
+          "caption": "SotM Europe 2025 shirt",
+          "credit": "Gregory Marler"
+        },
+        {
+          "file": "sotm-eu-2025-2.jpg",
+          "caption": "SotM Europe 2025 shirt (detail)",
+          "credit": "Gregory Marler"
+        }
+      ],
+      "stories": [
+        {
+          "author": "Gregory Marler",
+          "date": "July 2026",
+          "text": "This navy shirt (with a plain background) was offered as an add-on to tickets with collection at the conference, or to order with delivery to your own address."
+        }
+      ],
+      "type": "shirt"
+    },
+    {
+      "id": "mapzen-socks",
+      "name": "Mapzen Socks",
+      "category": "company",
+      "yearRange": "2016–2017",
+      "location": "New York, NY",
+      "description": "Mapzen-branded socks, given out around the company's New York office.",
+      "tags": [
+        "mapzen",
+        "company",
+        "socks"
+      ],
+      "photos": [
+        {
+          "file": "mapzen-socks.jpg",
+          "caption": "Mapzen socks",
+          "credit": "Julian Simioni"
+        }
+      ],
+      "stories": [
+        {
+          "author": "Julian Simioni",
+          "date": "July 2026",
+          "text": "Love these socks, they are super comfy, I may have snagged many pairs as the office was shutting down. Only have two left."
+        }
+      ],
+      "type": "other"
     }
   ]
 }
