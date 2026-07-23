@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2024-01-01",
+  "lastUpdated": "2026-07-22",
   "items": [
     {
       "id": "sotm-us-2010",
@@ -872,6 +872,332 @@
         }
       ],
       "type": "other"
+    },
+    {
+      "id": "fossgis-2016",
+      "name": "FOSSGIS 2016",
+      "category": "event",
+      "event": "FOSSGIS",
+      "year": 2016,
+      "location": "Salzburg, AT",
+      "description": "Shirt for attendees of the conference.",
+      "tags": [
+        "fossgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "fossgis-2016-front.jpg",
+          "caption": "FOSSGIS 2016 shirt (front)",
+          "credit": "Hannes"
+        },
+        {
+          "file": "fossgis-2016-back.jpg",
+          "caption": "FOSSGIS 2016 shirt (back)",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "fossgis-2017",
+      "name": "FOSSGIS 2017",
+      "category": "event",
+      "event": "FOSSGIS",
+      "year": 2017,
+      "location": "Passau, DE",
+      "description": "Shirt for attendees of the conference.",
+      "tags": [
+        "fossgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "fossgis-2017-front.jpg",
+          "caption": "FOSSGIS 2017 shirt (front)",
+          "credit": "Hannes"
+        },
+        {
+          "file": "fossgis-2017-back.jpg",
+          "caption": "FOSSGIS 2017 shirt (back)",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "fossgis-2018",
+      "name": "FOSSGIS 2018",
+      "category": "event",
+      "event": "FOSSGIS",
+      "year": 2018,
+      "location": "Bonn, DE",
+      "description": "Shirt for attendees of the conference.",
+      "tags": [
+        "fossgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "fossgis-2018-front.jpg",
+          "caption": "FOSSGIS 2018 shirt (front)",
+          "credit": "Hannes"
+        },
+        {
+          "file": "fossgis-2018-back.jpg",
+          "caption": "FOSSGIS 2018 shirt (back)",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "fossgis-2019",
+      "name": "FOSSGIS 2019",
+      "category": "event",
+      "event": "FOSSGIS",
+      "year": 2019,
+      "location": "Dresden, DE",
+      "description": "Shirt for attendees of the conference.",
+      "tags": [
+        "fossgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "fossgis-2019-front.jpg",
+          "caption": "FOSSGIS 2019 shirt (front)",
+          "credit": "Hannes"
+        },
+        {
+          "file": "fossgis-2019-back.jpg",
+          "caption": "FOSSGIS 2019 shirt (back)",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "fossgis-2022",
+      "name": "FOSSGIS 2022",
+      "category": "event",
+      "event": "FOSSGIS",
+      "year": 2022,
+      "location": "Online",
+      "description": "Shirt for attendees of the conference, held online.",
+      "tags": [
+        "fossgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "fossgis-2022-front.jpg",
+          "caption": "FOSSGIS 2022 shirt (front)",
+          "credit": "Hannes"
+        },
+        {
+          "file": "fossgis-2022-back.jpg",
+          "caption": "FOSSGIS 2022 shirt (back)",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "fossgis-2023",
+      "name": "FOSSGIS 2023",
+      "category": "event",
+      "event": "FOSSGIS",
+      "year": 2023,
+      "location": "Berlin, DE",
+      "description": "Shirt for attendees of the conference.",
+      "tags": [
+        "fossgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "fossgis-2023-front.jpg",
+          "caption": "FOSSGIS 2023 shirt (front)",
+          "credit": "Hannes"
+        },
+        {
+          "file": "fossgis-2023-back.jpg",
+          "caption": "FOSSGIS 2023 shirt (back)",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "fossgis-2024",
+      "name": "FOSSGIS 2024",
+      "category": "event",
+      "event": "FOSSGIS",
+      "year": 2024,
+      "location": "Hamburg, DE",
+      "description": "Shirt for attendees of the conference.",
+      "tags": [
+        "fossgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "fossgis-2024-front.jpg",
+          "caption": "FOSSGIS 2024 shirt (front)",
+          "credit": "Hannes"
+        },
+        {
+          "file": "fossgis-2024-back.jpg",
+          "caption": "FOSSGIS 2024 shirt (back)",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "fossgis-2025",
+      "name": "FOSSGIS 2025",
+      "category": "event",
+      "event": "FOSSGIS",
+      "year": 2025,
+      "location": "Münster, DE",
+      "description": "Shirt for attendees of the conference.",
+      "tags": [
+        "fossgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "fossgis-2025-front.jpg",
+          "caption": "FOSSGIS 2025 shirt (front)",
+          "credit": "Hannes"
+        },
+        {
+          "file": "fossgis-2025-back.jpg",
+          "caption": "FOSSGIS 2025 shirt (back)",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "qgis-contributor-meeting-24-2023",
+      "name": "24th QGIS Contributor Meeting",
+      "category": "event",
+      "event": "QGIS Contributor Meeting",
+      "year": 2023,
+      "location": "'s-Hertogenbosch, NL",
+      "description": "Shirt for attendees of the contributor meeting.",
+      "tags": [
+        "qgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "qgis-contributor-meeting-24-2023.jpg",
+          "caption": "24th QGIS Contributor Meeting shirt",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "qgis-contributor-meeting-25-2024",
+      "name": "25th QGIS Contributor Meeting",
+      "category": "event",
+      "event": "QGIS Contributor Meeting",
+      "year": 2024,
+      "location": "Bratislava, SK",
+      "description": "Shirt for attendees of the contributor meeting.",
+      "tags": [
+        "qgis",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "qgis-contributor-meeting-25-2024.jpg",
+          "caption": "25th QGIS Contributor Meeting shirt",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "agit-2016",
+      "name": "AGIT 2016",
+      "category": "event",
+      "event": "AGIT",
+      "year": 2016,
+      "location": "Salzburg, AT",
+      "description": "Shirt for attendees of the conference, themed \"Open:Spatial:Interfaces\".",
+      "tags": [
+        "agit",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "agit-2016.jpg",
+          "caption": "AGIT 2016 shirt",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "foss4g-2016",
+      "name": "FOSS4G 2016",
+      "category": "event",
+      "event": "FOSS4G",
+      "year": 2016,
+      "location": "Bonn, DE",
+      "description": "Shirt for attendees of the conference.",
+      "tags": [
+        "foss4g",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "foss4g-2016.jpg",
+          "caption": "FOSS4G 2016 shirt",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "foss4g-2022",
+      "name": "FOSS4G 2022",
+      "category": "event",
+      "event": "FOSS4G",
+      "year": 2022,
+      "location": "Firenze, IT",
+      "description": "Shirt for attendees of the conference.",
+      "tags": [
+        "foss4g",
+        "conference"
+      ],
+      "photos": [
+        {
+          "file": "foss4g-2022.jpg",
+          "caption": "FOSS4G 2022 shirt",
+          "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
     }
   ]
 }
