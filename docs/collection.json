@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22",
+  "lastUpdated": "2026-08-22",
   "items": [
     {
       "id": "sotm-us-2010",
@@ -1194,6 +1194,57 @@
           "file": "foss4g-2022.jpg",
           "caption": "FOSS4G 2022 shirt",
           "credit": "Hannes"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "foss4g-sotm-oceania-2018",
+      "name": "FOSS4G SotM Oceania 2018",
+      "category": "event",
+      "event": "FOSS4G SotM Oceania",
+      "year": 2018,
+      "location": "Melbourne, Australia",
+      "description": "Shirt for the first combined FOSS4G SotM Oceania conference, held in Melbourne 20-23 November 2018.",
+      "tags": [
+        "foss4g",
+        "sotm",
+        "oceania",
+        "conference",
+        "australia"
+      ],
+      "photos": [
+        {
+          "file": "foss4g-oceania-2018.jpg",
+          "caption": "FOSS4G SotM Oceania 2018 shirt",
+          "credit": "Phil Wyatt"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "foss4g-sotm-oceania-2024",
+      "name": "FOSS4G SotM Oceania 2024",
+      "category": "event",
+      "event": "FOSS4G SotM Oceania",
+      "year": 2024,
+      "location": "Hobart, Tasmania, Australia",
+      "description": "Shirt for FOSS4G SotM Oceania 2024, held in Hobart, Tasmania. The design is made up of the outlines of Oceania's islands, with Tasmania picked out in red.",
+      "tags": [
+        "foss4g",
+        "sotm",
+        "oceania",
+        "conference",
+        "australia",
+        "tasmania"
+      ],
+      "photos": [
+        {
+          "file": "foss4g-oceania-2024.jpg",
+          "caption": "FOSS4G SotM Oceania 2024 shirt",
+          "credit": "Phil Wyatt"
         }
       ],
       "stories": [],
