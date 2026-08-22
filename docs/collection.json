@@ -1282,6 +1282,55 @@
       ],
       "stories": [],
       "type": "shirt"
+    },
+    {
+      "id": "foss4g-sotm-oceania-2019",
+      "name": "FOSS4G SotM Oceania 2019",
+      "category": "event",
+      "event": "FOSS4G SotM Oceania",
+      "year": 2019,
+      "location": "Wellington, New Zealand",
+      "description": "Shirt for FOSS4G State of the Map Oceania 2019, held in Wellington.",
+      "tags": [
+        "foss4g",
+        "sotm",
+        "oceania",
+        "conference",
+        "new zealand"
+      ],
+      "photos": [
+        {
+          "file": "foss4g-sotm-oceania-2019.jpg",
+          "caption": "Front logo of the FOSS4G SotM Oceania 2019 shirt",
+          "credit": "Phil Wyatt"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "foss4g-auckland-2025",
+      "name": "FOSS4G Auckland 2025",
+      "category": "event",
+      "event": "FOSS4G",
+      "year": 2025,
+      "location": "Auckland, New Zealand",
+      "description": "Shirt for FOSS4G Auckland 2025.",
+      "tags": [
+        "foss4g",
+        "conference",
+        "new zealand",
+        "auckland"
+      ],
+      "photos": [
+        {
+          "file": "foss4g-auckland-2025.jpg",
+          "caption": "Front logo of the FOSS4G Auckland 2025 shirt",
+          "credit": "Phil Wyatt"
+        }
+      ],
+      "stories": [],
+      "type": "shirt"
     }
   ]
 }
