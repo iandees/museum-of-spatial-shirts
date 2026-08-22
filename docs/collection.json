@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22",
+  "lastUpdated": "2026-08-22",
   "items": [
     {
       "id": "sotm-us-2010",
@@ -1197,6 +1197,39 @@
         }
       ],
       "stories": [],
+      "type": "shirt"
+    },
+    {
+      "id": "gdal-tribute-2020",
+      "name": "GDAL Tribute",
+      "category": "concept",
+      "year": 2020,
+      "description": "GDAL tribute and OSGeo fundraiser t-shirt, sold by Joe Morrison. The first ~20 shirts covered production costs, and everything sold after that was donated directly to OSGeo.",
+      "tags": [
+        "gdal",
+        "osgeo",
+        "fundraiser",
+        "concept"
+      ],
+      "photos": [
+        {
+          "file": "gdal-tribute-2020-front.png",
+          "caption": "GDAL Tribute shirt (front)",
+          "credit": "Joe Morrison"
+        },
+        {
+          "file": "gdal-tribute-2020-back.png",
+          "caption": "GDAL Tribute shirt (back)",
+          "credit": "Joe Morrison"
+        }
+      ],
+      "stories": [
+        {
+          "author": "Joe Morrison",
+          "date": "November 2020",
+          "text": "I made a GDAL T-Shirt for no good reason! The first ~20 shirts will cover costs to make it, and everything thereafter will be donated directly to @OSGeo."
+        }
+      ],
       "type": "shirt"
     }
   ]
