@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "items": [
     {
       "id": "sotm-us-2010",
@@ -1542,6 +1542,59 @@
       ],
       "stories": [],
       "type": "shirt"
+    },
+    {
+      "id": "foss4g-2026-tote-bag",
+      "name": "FOSS4G 2026 Tote Bag",
+      "category": "event",
+      "event": "FOSS4G",
+      "year": 2026,
+      "location": "Hiroshima, Japan",
+      "description": "Natural canvas tote bag from FOSS4G 2026 in Hiroshima, printed in red with the conference's diamond logo.",
+      "tags": [
+        "foss4g",
+        "osgeo",
+        "conference",
+        "japan",
+        "hiroshima",
+        "tote bag"
+      ],
+      "photos": [
+        {
+          "file": "foss4g-2026-tote-bag.jpg",
+          "caption": "FOSS4G 2026 Hiroshima tote bag",
+          "credit": "Batuhan Kavlak"
+        }
+      ],
+      "stories": [],
+      "type": "other"
+    },
+    {
+      "id": "foss4g-2026-tenugui",
+      "name": "FOSS4G 2026 Tenugui",
+      "category": "event",
+      "event": "FOSS4G",
+      "year": 2026,
+      "location": "Hiroshima, Japan",
+      "description": "Tenugui (traditional Japanese cotton hand towel) from FOSS4G 2026 in Hiroshima. It carries the conference logo in orange above the city's name, 広島 (Hiroshima), in brush calligraphy.",
+      "tags": [
+        "foss4g",
+        "osgeo",
+        "conference",
+        "japan",
+        "hiroshima",
+        "tenugui",
+        "towel"
+      ],
+      "photos": [
+        {
+          "file": "foss4g-2026-tenugui-hand-towel.jpg",
+          "caption": "FOSS4G 2026 Hiroshima tenugui hand towel",
+          "credit": "Batuhan Kavlak"
+        }
+      ],
+      "stories": [],
+      "type": "other"
     }
   ]
 }
