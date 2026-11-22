@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-22",
   "items": [
     {
       "id": "sotm-us-2010",
@@ -1525,7 +1525,7 @@
     {
       "id": "humanitarian-openstreetmap-team-polo",
       "name": "Humanitarian OpenStreetMap Team Volunteer Polo",
-      "category": "company",
+      "category": "organization",
       "description": "Red volunteer polo shirt with the Humanitarian OpenStreetMap Team (HOT) logo on the chest.",
       "tags": [
         "hot",
