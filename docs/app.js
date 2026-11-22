@@ -6,12 +6,24 @@ const CATEGORY_ICONS = {
   event:   '📅',
   concept: '🌐',
   company: '🏢',
+  organization: '🤝',
 };
 
 const CATEGORY_LABELS = {
   event:   'Event',
   concept: 'Concept',
   company: 'Company',
+  organization: 'Organization',
+};
+
+// Nav button labels, in display order; types not listed here go last under their raw name
+const TYPE_NAV_LABELS = {
+  shirt:   'Shirts',
+  sticker: 'Stickers',
+  hoodie:  'Hoodies',
+  hat:     'Hats',
+  patch:   'Patches',
+  other:   'Other',
 };
 
 const TYPE_ICONS = {
@@ -114,6 +126,7 @@ async function init() {
   }
 
   renderStats();
+  renderTypeFilters();
   renderTagFilters();
   renderGrid();
   bindEvents();
@@ -148,6 +161,19 @@ function renderStats() {
       <span class="stat-label">Stories</span>
     </div>
   `;
+}
+
+// ---- Type filters: one nav button per type present in the collection ----
+function renderTypeFilters() {
+  const order = Object.keys(TYPE_NAV_LABELS);
+  const rank = t => (order.includes(t) ? order.indexOf(t) : order.length);
+  const types = [...new Set(allItems.map(i => i.type).filter(Boolean))]
+    .sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+  const wanted = document.querySelector('.nav-btn[data-filter="wanted"]');
+  types.forEach(t => {
+    wanted.insertAdjacentHTML('beforebegin',
+      `<button class="nav-btn" data-filter="${escHtml(t)}">${escHtml(TYPE_NAV_LABELS[t] || t)}</button>`);
+  });
 }
 
 // ---- Tag filters ----

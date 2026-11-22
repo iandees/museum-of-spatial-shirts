@@ -39,7 +39,7 @@ Each item in `public/collection.json` looks like this:
 {
   "id": "sotm-us-2019",
   "name": "State of the Map US 2019",
-  "category": "event",          // event | concept | company
+  "category": "event",          // event | concept | company | organization
   "type": "shirt",              // shirt | sticker | hoodie | hat | patch | other
   "year": 2019,
   "location": "Minneapolis, MN",
@@ -66,6 +66,7 @@ Each item in `public/collection.json` looks like this:
 - `event` — a specific conference, mapping party, or event
 - `concept` — a geo concept (Null Island, etc.)
 - `company` — a company of significance (Mapzen, etc.)
+- `organization` — a non-profit or community organization (HOT, etc.)
 - `collection` — an ungrouped batch of items
 
 ## Running locally
